@@ -10,6 +10,7 @@ Use the [Releases](https://github.com/Lunaticasylum67/Overtime-and-Travel/releas
 
 - Shared profile and optional signature stored in the browser; completed profiles collapse and remain editable.
 - Sections appear progressively as profile and declarations are completed.
+- Missions support Skip / Collapse / Edit missions; folded profiles show the optional signature status.
 - Separate EHW and travel modules; multiple missions and monthly EHW PDF pages.
 - Manual minute entry, quarter-hour interval rounding before EHW coefficients.
 - Generated PDFs with fillable approval fields.
