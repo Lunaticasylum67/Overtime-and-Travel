@@ -1,10 +1,10 @@
-## Overtime & Travel v1.5_A12 (Alpha)
+## Overtime & Travel v1.5_A13 (Alpha)
 
-- Silent anonymous update check at startup; no manual update button.
-- A popup offers Download / Later only when a newer eligible version exists.
-- GitHub icon appears only after a valid manifest was read successfully.
-- The form stays usable offline or if the check fails; no form data is transmitted.
-- Alpha builds follow Alpha and stable updates; stable builds follow stable updates only.
-- Fixed HH:MM entry, quarter-hour rounding, multi-month EHW and separate travel pages retained.
-
-Download the HTML and open it locally. The Quick Guide explains the form.
+- Only Shared profile is shown until the six required profile fields are valid; signature remains optional.
+- A complete remembered profile starts collapsed and can be reopened with Edit profile.
+- Clicking or focusing Missions / EHW collapses a completed profile.
+- Travel becomes available after a mission is saved.
+- Declaration summary appears after EHW or Travel is saved; Declaration date is now in the summary.
+- Hidden sections retain their data.
+- GitHub icon is centered above the version badge, with the same silent update monitoring as A12.
+- One-page Quick Guide updated.

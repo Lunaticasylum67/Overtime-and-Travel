@@ -1,14 +1,14 @@
 {
-  "version": "v1.5_A12",
+  "version": "v1.5_A13",
   "prerelease": true,
   "assets": [
     {
-      "path": "releases/v1.5_A12/Overtime-Travel-v1.5_A12.html",
-      "sha256": "eb180186e82ef7abe90dde4bb9f2884ba23299d5f4a786bf2808fe46ab20c4db"
+      "path": "releases/v1.5_A13/Overtime-Travel-v1.5_A13.html",
+      "sha256": "c7b975f36feeabf463273795a5f20f5b1e3412f503073c5029a6d797e0dec438"
     },
     {
-      "path": "releases/v1.5_A12/Overtime-Travel-Quick-Guide-v1.5_A12.pdf",
-      "sha256": "9113c468df76e0c36ad4e80948f9362f3421dc61d246ac35026d8d6cb788a06a"
+      "path": "releases/v1.5_A13/Overtime-Travel-Quick-Guide-v1.5_A13.pdf",
+      "sha256": "dca2f695239676bf1e7231f169a22cc7b1f15c31fdc817ede1acdafd8926bbb6"
     }
   ]
 }
