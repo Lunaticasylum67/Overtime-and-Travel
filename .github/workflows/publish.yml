@@ -1,0 +1,39 @@
+name: Publish versioned release
+on:
+  push:
+    branches: [main]
+    paths: [release.json, .github/workflows/publish.yml]
+permissions:
+  contents: write
+concurrency:
+  group: publish-overtime-travel
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify exact release assets
+        run: |
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          m = json.loads(Path('release.json').read_text())
+          assert m['version'] == 'v1.5_A12'
+          for asset in m['assets']:
+              assert asset['path'].startswith('releases/v1.5_A12/')
+              assert hashlib.sha256(Path(asset['path']).read_bytes()).hexdigest() == asset['sha256']
+          PY
+      - name: Tag verified commit and publish Alpha
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: v1.5_A12
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git tag -a "$RELEASE_TAG" -m "$RELEASE_TAG" "$GITHUB_SHA"
+          git push origin "$RELEASE_TAG"
+          gh release create "$RELEASE_TAG" releases/v1.5_A12/Overtime-Travel-v1.5_A12.html releases/v1.5_A12/Overtime-Travel-Quick-Guide-v1.5_A12.pdf --title 'Overtime & Travel v1.5_A12 (Alpha)' --notes-file release-notes.md --prerelease --verify-tag
