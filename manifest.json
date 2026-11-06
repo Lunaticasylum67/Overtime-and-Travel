@@ -2,15 +2,15 @@
   "schema": 1,
   "product": "Overtime & Travel",
   "latest": {
-    "stable": null,
-    "alpha": {
-      "version": "v1.5_A14",
+    "stable": {
+      "version": "v1.5",
       "date": "2026-11-06",
-      "summary": "Profile with signature thumbnail or SIGNATURE MISSING, collapsible Missions with Skip / Collapse / Edit missions, Changes heading, and update popup closing on Download HTML.",
-      "html_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5_A14/Overtime-Travel-v1.5_A14.html",
-      "guide_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5_A14/Overtime-Travel-Quick-Guide-v1.5_A14.pdf",
-      "html_sha256": "a72a473b9f419152c75b1b1c47801b9faa7a1e29429d7933a5d88a54241b1834",
-      "guide_sha256": "79bb2f48668af0d6273fff753593b8b6c281b2a38be551ba445bb39a506cb67a"
-    }
+      "summary": "Production release with a stacked version / Changelog / Quick Guide header, interactive update status, complete version history and all v1.5 Alpha improvements.",
+      "html_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5/Overtime-Travel-v1.5.html",
+      "guide_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5/Overtime-Travel-Quick-Guide-v1.5.pdf",
+      "html_sha256": "be5dccd5925e3ffac64274264d47b6cff8970250ca5f777b6fb89622e970d266",
+      "guide_sha256": "75668db2d28223dbcca6c6db7d8363377accbdff04b8941e626e1d452fe41eb6"
+    },
+    "alpha": null
   }
 }
