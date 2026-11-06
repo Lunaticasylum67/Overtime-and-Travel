@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "product": "Overtime & Travel",
+  "latest": {
+    "stable": null,
+    "alpha": {
+      "version": "v1.5_A12",
+      "date": "2026-11-06",
+      "summary": "Silent startup update check, new-version popup and GitHub status icon. Save / Update wording and fixed HH:MM entry retained.",
+      "html_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5_A12/Overtime-Travel-v1.5_A12.html",
+      "guide_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5_A12/Overtime-Travel-Quick-Guide-v1.5_A12.pdf",
+      "html_sha256": "eb180186e82ef7abe90dde4bb9f2884ba23299d5f4a786bf2808fe46ab20c4db",
+      "guide_sha256": "9113c468df76e0c36ad4e80948f9362f3421dc61d246ac35026d8d6cb788a06a"
+    }
+  }
+}

@@ -17,6 +17,6 @@ Use the [Releases](https://github.com/Lunaticasylum67/Overtime-and-Travel/releas
 
 ## Publication
 
-Versioned source HTML and PDF assets are stored under `releases/`. The publishing workflow verifies SHA-256 hashes before creating a tagged pre-release. `manifest.json` is updated only after the release and downloads have been verified.
+Versioned source HTML and PDF assets are stored under `releases/`. A temporary publishing workflow verifies SHA-256 hashes before creating each tagged pre-release. `manifest.json` is updated only after the release and downloads have been verified.
 
 Only blank distribution files belong in this repository. Filled HTML declarations, profile data and signatures must not be committed.
