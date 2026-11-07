@@ -2,6 +2,13 @@
 
 Alpha changes are consolidated under their target stable version.
 
+## v1.5.2 — 2026-11-07
+
+- Fix Session STR to the Standard day category.
+- Recall the latest saved justification for each activity.
+- Keep different activities on the same day on separate saved and PDF rows.
+- Include the v1.5.1 Quick Guide unchanged.
+
 ## v1.5 — 2026-11-06
 
 - Add Session STR with automatic Strasbourg prefilling and no duplicate activity.
