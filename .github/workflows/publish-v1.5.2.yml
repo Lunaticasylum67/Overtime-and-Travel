@@ -1,0 +1,42 @@
+name: Publish Overtime and Travel v1.5.2
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/publish-v1.5.2.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      RELEASE_SHA: 4da31127b9948d82d86e5e59e33c5d495cb3b8d7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 4da31127b9948d82d86e5e59e33c5d495cb3b8d7
+          fetch-depth: 0
+      - name: Verify and publish release
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          manifest = json.loads(Path('release.json').read_text())
+          assert manifest['version'] == 'v1.5.2'
+          assert {a['path'] for a in manifest['assets']} == {
+              'releases/v1.5.2/Overtime-Travel-v1.5.2.html',
+              'releases/v1.5.2/Overtime-Travel-Quick-Guide-v1.5.1.pdf',
+          }
+          for asset in manifest['assets']:
+              assert hashlib.sha256(Path(asset['path']).read_bytes()).hexdigest() == asset['sha256']
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git tag -a v1.5.2 -m 'Overtime & Travel v1.5.2' "$RELEASE_SHA"
+          git push origin refs/tags/v1.5.2
+          gh release create v1.5.2 \
+            releases/v1.5.2/Overtime-Travel-v1.5.2.html \
+            releases/v1.5.2/Overtime-Travel-Quick-Guide-v1.5.1.pdf \
+            --title 'Overtime & Travel v1.5.2' --notes-file release-notes.md --latest --verify-tag
