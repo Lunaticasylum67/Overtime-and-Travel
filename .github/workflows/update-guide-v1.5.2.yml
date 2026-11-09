@@ -1,0 +1,24 @@
+name: Update Quick Guide for v1.5.2
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/update-guide-v1.5.2.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish verified guide
+        run: |
+          set -euo pipefail
+          echo '41dc6cb4ed9061d340077d624b6d9f53b58d88bbcaf90be3967499c925cecd00  releases/v1.5.2/Overtime-Travel-Quick-Guide-v1.5.2.pdf' | sha256sum -c
+          gh release view v1.5.2
+          gh release upload v1.5.2 releases/v1.5.2/Overtime-Travel-Quick-Guide-v1.5.2.pdf
+          gh release download v1.5.2 -p 'Overtime-Travel-Quick-Guide-v1.5.2.pdf' -O /tmp/guide.pdf
+          echo '41dc6cb4ed9061d340077d624b6d9f53b58d88bbcaf90be3967499c925cecd00  /tmp/guide.pdf' | sha256sum -c
+          gh release edit v1.5.2 --notes-file release-notes.md
