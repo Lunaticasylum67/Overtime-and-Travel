@@ -1,3 +1,7 @@
+## v1.5.3
+- Route overtime declarations for AST 1–4 to the HRM Portal while keeping travel time compensation available.
+- Add the linked AST 1–4 notice to the one-page Quick Guide.
+
 # Changelog
 
 Alpha changes are consolidated under their target stable version.
