@@ -3,13 +3,13 @@
   "product": "Overtime & Travel",
   "latest": {
     "stable": {
-      "version": "v1.5.2",
-      "date": "2026-11-07",
-      "summary": "Session STR uses the Standard day category. Justifications are remembered per activity, and different activities on the same day appear on separate saved and PDF rows.",
-      "html_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5.2/Overtime-Travel-v1.5.2.html",
-      "guide_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5.2/Overtime-Travel-Quick-Guide-v1.5.2.pdf",
-      "html_sha256": "88f6ab677757ec0f9de735a1a7ab70432f0fd47e4bc0de16deb7df5dd9cc6f6c",
-      "guide_sha256": "41dc6cb4ed9061d340077d624b6d9f53b58d88bbcaf90be3967499c925cecd00"
+      "version": "v1.5.3",
+      "date": "2026-11-10",
+      "summary": "Overtime for grades AST 1 to AST 4 is declared in the HRM Portal. Travel time compensation remains available. The Quick Guide includes the HRM Portal link.",
+      "html_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5.3/Overtime-Travel-v1.5.3.html",
+      "guide_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5.3/Overtime-Travel-Quick-Guide-v1.5.3.pdf",
+      "html_sha256": "0cfed7781ee3cdd016c3814f83af1a8b009ff34aa0c56a7dbbb4f1c77fbc60b0",
+      "guide_sha256": "e1c3925a18a16af7d1d12a0fdb94040a494646d1f45990d6d19f3311b25c71f8"
     },
     "alpha": null
   }
