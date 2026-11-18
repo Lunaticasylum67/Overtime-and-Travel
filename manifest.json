@@ -3,13 +3,13 @@
   "product": "Overtime & Travel",
   "latest": {
     "stable": {
-      "version": "v1.5.3",
-      "date": "2026-11-10",
-      "summary": "Overtime for grades AST 1 to AST 4 is declared in the HRM Portal. Travel time compensation remains available. The Quick Guide includes the HRM Portal link.",
-      "html_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5.3/Overtime-Travel-v1.5.3.html",
-      "guide_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5.3/Overtime-Travel-Quick-Guide-v1.5.3.pdf",
-      "html_sha256": "0cfed7781ee3cdd016c3814f83af1a8b009ff34aa0c56a7dbbb4f1c77fbc60b0",
-      "guide_sha256": "e1c3925a18a16af7d1d12a0fdb94040a494646d1f45990d6d19f3311b25c71f8"
+      "version": "v1.5.4",
+      "date": "2026-11-18",
+      "summary": "Mission dates and travel consistency checks; multiple breaks before coefficients; clearer time breakdowns; Short Friday and updated travel AM/PM rules.",
+      "html_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5.4/Overtime-Travel-v1.5.4.html",
+      "guide_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5.4/Overtime-Travel-Quick-Guide-v1.5.4.pdf",
+      "html_sha256": "083a60bca0d6a805967506373376818770c22e82b8c62e317f2a82b1639109eb",
+      "guide_sha256": "19bd9acae2ffb3e464753d965bb7b331d2141ed82af88ee8936b366bee4c2773"
     },
     "alpha": null
   }
