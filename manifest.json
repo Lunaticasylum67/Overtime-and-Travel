@@ -3,13 +3,13 @@
   "product": "Overtime & Travel",
   "latest": {
     "stable": {
-      "version": "v1.5.4",
-      "date": "2026-11-18",
-      "summary": "Mission dates and travel consistency checks; multiple breaks before coefficients; clearer time breakdowns; Short Friday and updated travel AM/PM rules.",
-      "html_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5.4/Overtime-Travel-v1.5.4.html",
-      "guide_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5.4/Overtime-Travel-Quick-Guide-v1.5.4.pdf",
-      "html_sha256": "083a60bca0d6a805967506373376818770c22e82b8c62e317f2a82b1639109eb",
-      "guide_sha256": "19bd9acae2ffb3e464753d965bb7b331d2141ed82af88ee8936b366bee4c2773"
+      "version": "v1.5.5",
+      "date": "2026-11-26",
+      "summary": "FG I and FG II use the HRM Portal for overtime. Filled HTML backups include the last name and local save date.",
+      "html_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5.5/Overtime-Travel-v1.5.5.html",
+      "guide_url": "https://github.com/Lunaticasylum67/Overtime-and-Travel/releases/download/v1.5.5/Overtime-Travel-Quick-Guide-v1.5.5.pdf",
+      "html_sha256": "0efdcc190845fa2b5dfb7f3e6c42173fb82ead0149dc5dc0c31295a9faadbda7",
+      "guide_sha256": "134799ef1fa6bee01e72ec6598cdd14814afb6af8504620e159ea614bcd9b35f"
     },
     "alpha": null
   }
