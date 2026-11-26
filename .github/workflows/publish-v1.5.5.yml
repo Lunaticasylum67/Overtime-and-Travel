@@ -1,0 +1,30 @@
+name: Publish v1.5.5
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/publish-v1.5.5.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: dbccc01ede8d622944c52583b5ff1a28053dc1ad
+      - name: Verify validated assets
+        shell: bash
+        run: |
+          echo '0efdcc190845fa2b5dfb7f3e6c42173fb82ead0149dc5dc0c31295a9faadbda7  releases/v1.5.5/Overtime-Travel-v1.5.5.html' | sha256sum -c -
+          echo '134799ef1fa6bee01e72ec6598cdd14814afb6af8504620e159ea614bcd9b35f  releases/v1.5.5/Overtime-Travel-Quick-Guide-v1.5.5.pdf' | sha256sum -c -
+      - name: Tag and publish
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git tag -a v1.5.5 -m 'Release v1.5.5' dbccc01ede8d622944c52583b5ff1a28053dc1ad
+          git push origin v1.5.5
+          gh release create v1.5.5 releases/v1.5.5/Overtime-Travel-v1.5.5.html releases/v1.5.5/Overtime-Travel-Quick-Guide-v1.5.5.pdf --title 'Overtime & Travel v1.5.5' --notes-file release-notes.md --verify-tag
