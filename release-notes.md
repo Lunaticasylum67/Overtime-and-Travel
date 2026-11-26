@@ -1,7 +1,5 @@
-## v1.5.4 — 2026-11-18
+## v1.5.5 — 2026-11-26
 
-- Add mission dates including travel, with bidirectional checks between mission periods, EHW and journeys.
-- Support multiple non-worked breaks, deducted before coefficients, alongside lunch work and clear live time breakdowns.
-- Add Short Friday and explicit weekday categories; apply travel AM/PM at 12:00, or 13:30 for Short Friday, with no credit on regular working days or Long Friday.
-- Show weekdays in mission summaries and highlight unusual Session STR dates without blocking exceptional cases.
-- Improve entry saving and reuse, and align the integrated Quick Guide with the release.
+- Add FG I and FG II with the same blue grade highlighting and HRM Portal overtime handling as AST 1 to AST 4; travel compensation remains available.
+- Add the uppercase last name and local save date (DD-MM-YY) to filled HTML filenames for daily backups.
+- Update the integrated one-page Quick Guide.

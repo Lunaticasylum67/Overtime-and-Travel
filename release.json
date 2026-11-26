@@ -1,14 +1,14 @@
 {
+  "version": "v1.5.5",
   "prerelease": false,
-  "version": "v1.5.4",
   "assets": [
     {
-      "path": "releases/v1.5.4/Overtime-Travel-v1.5.4.html",
-      "sha256": "083a60bca0d6a805967506373376818770c22e82b8c62e317f2a82b1639109eb"
+      "path": "releases/v1.5.5/Overtime-Travel-v1.5.5.html",
+      "sha256": "0efdcc190845fa2b5dfb7f3e6c42173fb82ead0149dc5dc0c31295a9faadbda7"
     },
     {
-      "path": "releases/v1.5.4/Overtime-Travel-Quick-Guide-v1.5.4.pdf",
-      "sha256": "19bd9acae2ffb3e464753d965bb7b331d2141ed82af88ee8936b366bee4c2773"
+      "path": "releases/v1.5.5/Overtime-Travel-Quick-Guide-v1.5.5.pdf",
+      "sha256": "134799ef1fa6bee01e72ec6598cdd14814afb6af8504620e159ea614bcd9b35f"
     }
   ]
 }
